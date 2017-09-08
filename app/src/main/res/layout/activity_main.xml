@@ -38,6 +38,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:background="@android:color/holo_green_light"
+        android:onClick="countMe"
         android:text="Count" />
 
     <Button
