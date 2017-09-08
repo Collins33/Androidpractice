@@ -21,29 +21,32 @@
         android:id="@+id/toast_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TOAST"
-        android:layout_below="@+id/textView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="54dp" />
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="54dp"
+        android:background="@android:color/holo_green_light"
+        android:text="TOAST" />
 
     <Button
         android:id="@+id/count_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Count"
         android:layout_alignBaseline="@+id/random_button"
         android:layout_alignBottom="@+id/random_button"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:background="@android:color/holo_green_light"
+        android:text="Count" />
 
     <Button
         android:id="@+id/random_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Random"
         android:layout_alignBaseline="@+id/toast_button"
         android:layout_alignBottom="@+id/toast_button"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_green_light"
+        android:text="Random" />
 
 </RelativeLayout>
