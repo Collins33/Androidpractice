@@ -1,5 +1,6 @@
 package com.example.root.myapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -32,4 +33,13 @@ public class MainActivity extends AppCompatActivity {
         //make the view we called to display the number
         myNumber.setText(finalNumber.toString());
     }
+    public void randomMe(View view){
+
+    //create intent to start new activity
+    Intent randomIntent=new Intent(this,secondactivity.class);
+    //start the activity
+
+
+        startActivity(randomIntent);}
+
 }

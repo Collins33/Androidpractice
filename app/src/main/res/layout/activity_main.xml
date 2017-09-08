@@ -48,6 +48,7 @@
         android:layout_alignBaseline="@+id/toast_button"
         android:layout_alignBottom="@+id/toast_button"
         android:layout_centerHorizontal="true"
+        android:onClick="randomMe"
         android:background="@android:color/holo_green_light"
         android:text="Random" />
 
