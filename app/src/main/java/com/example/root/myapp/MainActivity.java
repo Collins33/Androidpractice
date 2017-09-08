@@ -8,6 +8,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+    //THIS WILL BE THE KEY WHEN ADDING EXTRA TO AN INTENT
+    private static final String TOTAL_COUNT = "total_count";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,11 +38,18 @@ public class MainActivity extends AppCompatActivity {
     }
     public void randomMe(View view){
 
+
     //create intent to start new activity
     Intent randomIntent=new Intent(this,secondactivity.class);
-    //start the activity
-
-
+        //get view that shows the count
+        TextView showCountTextView=(TextView) findViewById(R.id.textView);
+        //get value of text value,it is a string
+        String countString= showCountTextView.getText().toString();
+        //convert view into int
+        int count=Integer.parseInt(countString);
+        //add the view into the intent
+        randomIntent.putExtra(TOTAL_COUNT,count);
+        //start the activity
         startActivity(randomIntent);}
 
 }
